@@ -1,0 +1,117 @@
+body{
+    margin:0;
+    overflow:scroll;
+}
+
+ 
+.topbar
+{
+    display:flex;
+    flex-wrap:wrap;
+    background-color: white;
+    height: 4rem;
+    position:fixed;
+    top:0;
+    z-index:1000;
+    width:100%
+}
+
+#b
+{
+    margin: 1.25rem;
+    background-color:white;
+    color: green;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+
+.background-section 
+{
+    position: relative;
+    height: calc(100vh - 4rem); 
+    background-image: url("deakin\ univeristy\ name.jpg"); 
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    background-position: center;
+}
+
+.hover-text 
+{
+    display: none;
+    position: absolute;
+    width: 98%;
+    text-align: center;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: White;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    transition: 0.8 0.5s ease-in-out;
+    transform: 0.5s ease-in-out;
+}
+  
+.background-section:hover .hover-text 
+{
+    display: block;
+}
+
+.profile-section{
+  display: flex;
+  flex-direction: column;     
+  justify-content: center;     
+  align-items: center;         
+  min-height: 35rem;
+  text-align: center;
+}
+
+.profile-section img
+{
+    height:10rem;
+    width: 10rem;
+}
+
+.profile-section{
+    color: rgb(18, 151, 18);
+}
+
+.nature, .nature2{
+    display:flex;
+    align-items: center;
+}
+
+.profile-pic{
+    margin-top: 3rem;
+}
+.photo-section{
+    text-align: center;
+    color: rgb(18, 151, 18);
+}
+.imagegallery{
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+    
+
+}
+.imagegallery img{
+    height: 18rem;
+    width: 20rem;
+    margin: 1rem;
+}
+
+@media (max-width: 900px) {
+    .imagegallery img {
+        flex: 1 1 45%;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .imagegallery img {
+        flex: 1 1 100%;
+    }
+}
